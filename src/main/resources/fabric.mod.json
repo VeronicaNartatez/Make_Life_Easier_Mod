@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "makelifeeasiermod",
+	"version": "${version}",
+	"name": "MakeLifeEasierMod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/makelifeeasiermod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.makelifeeasiermod.MakeLifeEasierMod"
+		],
+		"client": [
+			"me.makelifeeasiermod.MakeLifeEasierModClient"
+		],
+		"fabric-datagen": [
+			"me.makelifeeasiermod.MakeLifeEasierModDataGenerator"
+		]
+	},
+	"mixins": [
+		"makelifeeasiermod.mixins.json",
+		{
+			"config": "makelifeeasiermod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
