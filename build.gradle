@@ -47,6 +47,14 @@ dependencies {
 	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
 
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
+
+	// Testing
+	testImplementation "org.junit.jupiter:junit-jupiter-params:${junit_version}"
+	testImplementation "org.junit.jupiter:junit-jupiter-api:${junit_version}"
+
+	testImplementation "org.mockito:mockito-core:${mockito_version}"
+	testImplementation "org.mockito:mockito-junit-jupiter:${mockito_version}"
+	testImplementation "org.mockito:mockito-inline:${mockito_inline_version}"
 }
 
 processResources {
