@@ -1,5 +1,6 @@
 package me.makelifeeasiermod;
 
+import me.makelifeeasiermod.ping.PingEventListeners;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -18,5 +19,9 @@ public class MakeLifeEasierMod implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+
+
+		PingEventListeners pingEventListeners = new PingEventListeners();
+
 	}
 }

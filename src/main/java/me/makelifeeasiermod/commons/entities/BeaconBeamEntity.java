@@ -1,2 +1,4 @@
-package me.makelifeeasiermod.commons.entities;public class BeaconBeamEntity {
+package me.makelifeeasiermod.commons.entities;
+
+public class BeaconBeamEntity {
 }

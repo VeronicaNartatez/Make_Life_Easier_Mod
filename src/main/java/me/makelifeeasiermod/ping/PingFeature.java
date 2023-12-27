@@ -1,2 +1,4 @@
-package me.makelifeeasiermod.ping;public class PingFeature {
+package me.makelifeeasiermod.ping;
+
+public class PingFeature {
 }
